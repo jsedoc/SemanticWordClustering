@@ -1,2 +1,2 @@
 # SemanticWordClustering
-This repository build off of the Signed Spectral Clustering Repository
+This repository builds off of the Signed Spectral Clustering repository.

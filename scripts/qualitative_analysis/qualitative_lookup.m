@@ -11,7 +11,7 @@ word = user_word_prompt(names);
 msgbox(similar_words_lookup(word, names, thesaurus_aligned),'Thesaurus')
 msgbox(similar_words_lookup(word, names,  WD,   10), 'Embedding')
 
-
+disp('now hit enter to continue.')
 pause;
 
   allHandle = allchild(0);

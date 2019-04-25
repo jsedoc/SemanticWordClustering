@@ -8,8 +8,8 @@ nNE = zeros(nc,1);
 for i=1:nc
     Ws = W(XXc(:,i)>0, XXc(:,i)>0);
     nNE(i) =  sum(sum(Ws<0))/2;
-    D = sum(Ws);
-    nIsoNodes = sum(D<1);
+    D = sum(abs(Ws));
+    nIsoNodes = sum(D==0);
     Wsp = Ws(D>0,D>0);
 
     cc = graph_connected_components(Wsp);
